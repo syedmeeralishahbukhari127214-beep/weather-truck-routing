@@ -84,14 +84,14 @@ export default function PlaceInput({ label, value, onChange, error, icon }) {
         </span>
       </div>
       {open && options.length > 0 && (
-        <ul id={listId} role="listbox" className="absolute left-0 right-0 top-[calc(100%+6px)] z-50 overflow-hidden rounded-lg border border-[#aab8b5] bg-slate-900 shadow-xl">
+        <ul id={listId} role="listbox" className="absolute left-0 right-0 top-[calc(100%+6px)] z-50 overflow-hidden rounded-lg border border-[#aab8b5] bg-white shadow-xl">
           {options.map((o, i) => (
             <li
               key={`${o.lat},${o.lon}`}
               id={`${id}-opt-${i}`}
               role="option"
               aria-selected={i === active}
-              className={`cursor-pointer px-3 py-2 text-sm ${i === active ? "bg-[#0b5d6b]/20 text-white" : "text-[#4a5f67] hover:bg-[#e3eff1] hover:text-white"}`}
+              className={`cursor-pointer px-3 py-2 text-sm text-[#12262e] ${i === active ? "bg-[#e3eff1]" : "hover:bg-[#e3eff1]"}`}
               onMouseDown={(e) => {
                 e.preventDefault();
                 choose(o);

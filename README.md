@@ -2,7 +2,10 @@
 
 React + Django app that recommends the safest of up to 3 truck routes based on weather, load weight and travel time.
 
-> Status: backend and frontend complete. Remaining: deploy, demo video.
+> Status: backend and frontend complete.  
+
+> Live URL: https://frontend-three-jade-10.vercel.app/  
+> Loom Demo: https://www.loom.com/share/36889d3cbd784a87bfb0a55748b8a9e4
 
 ## How it works
 1. **Routes**: Mapbox Directions returns the fastest route plus alternatives (max 3).

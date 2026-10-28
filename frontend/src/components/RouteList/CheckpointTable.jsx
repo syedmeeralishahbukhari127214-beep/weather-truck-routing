@@ -5,7 +5,7 @@ export default function CheckpointTable({ route, routeNumber, onFocus }) {
   return (
     <section aria-labelledby="cp-heading" className="rounded-2xl border border-[#d3dbd9] bg-white p-5 shadow-lg">
       <div className="mb-3">
-        <h2 id="cp-heading" className="text-lg font-bold text-white">Checkpoints on route {routeNumber}</h2>
+        <h2 id="cp-heading" className="text-lg font-bold text-[#12262e]">Checkpoints on route {routeNumber}</h2>
         <p className="mt-1 text-sm text-[#4a5f67]">Times are in your local time zone. Select a mile marker to find it on the map.</p>
       </div>
       <div className="overflow-x-auto rounded-lg border border-[#aab8b5]">

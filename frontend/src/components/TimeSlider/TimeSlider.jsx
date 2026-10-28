@@ -24,7 +24,7 @@ export default function TimeSlider({ hours, worstByHour, value, onChange, showHe
     <section className="rounded-2xl border border-[#d3dbd9] bg-white p-4 shadow-lg" aria-live="polite">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <p className="text-sm font-bold text-white">
+          <p className="text-sm font-bold text-[#12262e]">
             {ready ? (value === 0 ? "At departure" : `+${value} h`) : "Weather forecast"}
           </p>
           {ready && <p className="text-xs text-[#4a5f67]">{timeLabel}</p>}

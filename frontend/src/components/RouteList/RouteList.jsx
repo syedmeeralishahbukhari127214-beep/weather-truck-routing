@@ -7,7 +7,7 @@ export default function RouteList({ routes, selectedId, onSelect, reason }) {
   return (
     <section aria-labelledby="routes-heading" className="rounded-2xl border border-[#d3dbd9] bg-white p-5 shadow-lg">
       <div className="mb-3 flex items-center justify-between">
-        <h2 id="routes-heading" className="text-lg font-bold text-white">Routes</h2>
+        <h2 id="routes-heading" className="text-lg font-bold text-[#12262e]">Routes</h2>
         {reason && <p className="text-sm text-[#4a5f67]">{reason}</p>}
       </div>
       <ul className="space-y-3">
@@ -25,7 +25,7 @@ export default function RouteList({ routes, selectedId, onSelect, reason }) {
               >
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <div className="flex items-center gap-2">
-                    <span className="text-base font-bold text-white">Route {n + 1}</span>
+                    <span className="text-base font-bold text-[#12262e]">Route {n + 1}</span>
                     {r.recommended && <span className="rounded-full bg-[#0b5d6b] px-2.5 py-0.5 text-xs font-bold text-white">Recommended</span>}
                   </div>
                   <RiskBadge level={r.stats.worst_risk} />
